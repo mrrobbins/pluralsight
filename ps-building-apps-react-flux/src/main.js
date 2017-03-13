@@ -1,5 +1,9 @@
-$ = jQuery = require('jquery');
-var React = require('react');
-var Home = require('./components/HomePage');
+"use strict";
 
-React.render(<Home/>, document.getElementById('app'));
+var React = require('react');
+var Router = require('react-router');
+var routes = require('./routes');
+
+Router.run(routes, function(RouteHandler) {
+  React.render(<RouteHandler/>, document.getElementById('app'));
+});
