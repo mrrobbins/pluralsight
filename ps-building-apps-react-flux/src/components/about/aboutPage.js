@@ -9,6 +9,11 @@ var About = React.createClass({
       } else {
         callback();
       }
+    },
+    willTransitionFrom: function(transition, component) {
+      if (!confirm('Are you sure you want to leave?')) {
+        transition.abort();
+      }
     }
   },
   render: function () {
