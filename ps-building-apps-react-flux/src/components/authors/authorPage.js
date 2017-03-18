@@ -2,7 +2,8 @@
 
 var React = require('react');
 var Link = require('react-router').Link;
-var AuthorApi = require('../../api/authorApi');
+var AuthorStore = require('../../stores/authorStore');
+var AuthorActions = require('../../actions/authorActions');
 var AuthorList = require('./authorList');
 
 var marginBottomStyle = {
@@ -10,25 +11,32 @@ var marginBottomStyle = {
 };
 
 var AuthorPage = React.createClass({
-  getInitialState: function() {
+  getInitialState: function () {
     return {
-        authors: []
+      authors: AuthorStore.getAllAuthors()
     };
   },
 
-  componentDidMount: function() {
-    if (this.isMounted()) {
-      this.setState({authors: AuthorApi.getAllAuthors()});
-    }
+  // before the component mounts, register our change callback with the author store so this page is notified anytime an author changes and can update its state
+  componentWillMount: function() {
+    AuthorStore.addChangeListener(this._onChange);
   },
 
-  render: function() {
+  componentWillUnmount: function() {
+    AuthorStore.removeChangeListener(this._onChange);
+  },
+
+  _onChange: function () {
+    this.setState({authors: AuthorStore.getAllAuthors()});
+  },
+
+  render: function () {
     return (
-        <div>
-          <h1>Authors</h1>
-          <Link to="addAuthor" className="btn btn-default" style={marginBottomStyle}>Add Author</Link>
-          <AuthorList authors={this.state.authors} />
-        </div>
+      <div>
+        <h1>Authors</h1>
+        <Link to="addAuthor" className="btn btn-default" style={marginBottomStyle}>Add Author</Link>
+        <AuthorList authors={this.state.authors}/>
+      </div>
     );
   }
 });
