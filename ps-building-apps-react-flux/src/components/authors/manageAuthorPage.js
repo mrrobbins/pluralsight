@@ -5,6 +5,7 @@ var Router = require('react-router');
 var AuthorForm = require('./authorForm');
 var AuthorApi = require('../../api/authorApi');
 var toastr = require('toastr');
+var Link = Router.Link;
 
 var ManageAuthorPage = React.createClass({
   statics: {
@@ -74,8 +75,8 @@ var ManageAuthorPage = React.createClass({
     }
     AuthorApi.saveAuthor(this.state.author);
     this.setState({dirty: false});
-    toastr.success('Author saved.');
-    this.transitionTo('authors');
+    toastr.success('Author saved. <a href="/#/authors">Go to Authors?</a>'); // TODO make this a Router Link
+    //this.transitionTo('authors');
   },
 
   render: function() {

@@ -37,19 +37,3 @@ var AuthorForm = React.createClass({
 });
 
 module.exports = AuthorForm;
-
-/*
- <Input
- name="firstName"
- label="First Name"
- value={this.props.author.firstName}
- onChange={this.props.onChange}
- error={this.props.errors.firstName} />
-
- <Input
- name="lastName"
- label="Last Name"
- value={this.props.author.lastName}
- onChange={this.props.onChange}
- error={this.props.errors.lastName} />
-*/
