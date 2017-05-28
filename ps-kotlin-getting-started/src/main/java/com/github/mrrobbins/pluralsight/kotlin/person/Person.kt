@@ -28,8 +28,23 @@ open class Person(val name: String, val age: Int, gender: String = "unspecified"
 
 class Teenager(name: String, age: Int) : Person(name, age)
 
+data class User(val name: String, val id: Int);
 
 fun main(args: Array<String>) {
+    println("Basic classes and inheritance examples:")
     val teenager = Teenager("Matt", 19)
     teenager.sign();
+
+    println("Data class examples:")
+    val robin = User("Robin", 1);
+
+    println(robin);
+
+    val (name) = robin;
+
+    println("User is $name")
+
+    val otherUser = robin.copy(id = 2)
+
+    println(otherUser)
 }
