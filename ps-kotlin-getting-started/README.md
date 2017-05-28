@@ -1,4 +1,4 @@
-# Kotlin
+# Kotlin: Getting Started by Kevin Jones
 
 ## Key features
 
@@ -12,3 +12,14 @@
     * no getters/setters
     * extensive type inference
 * Using Kotlin to write DSLs
+
+## Mechanics
+* Visibility is public: classes, interfaces, methods
+* Method expressions - simple method bodies can be RHS expressions, omitting curly braces and return keyword
+* Classes are final by default
+
+### Equality
+Equality Type|Java|Kotlin
+------|------|------
+Object equality|`Object.$equals()`|`==`
+Reference equality|`==`|`===`
