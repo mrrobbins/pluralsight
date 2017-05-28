@@ -5,9 +5,6 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.*;
 
-/**
- * Created by mrobbins on 5/28/17.
- */
 public class JavaStringUtilsTest {
 
     @Test
