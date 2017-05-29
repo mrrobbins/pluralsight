@@ -23,3 +23,8 @@ Equality Type|Java|Kotlin
 ------|------|------
 Object equality|`Object.$equals()`|`==`
 Reference equality|`==`|`===`
+
+### Exceptions
+* No Checked Exceptions
+
+## Interoperability with Java

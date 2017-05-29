@@ -1,5 +1,6 @@
-package com.github.mrrobbins.pluralsight.kotlin;
+package com.github.mrrobbins.pluralsight.kotlin.java;
 
+import com.github.mrrobbins.pluralsight.kotlin.java.JavaStringUtils;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
