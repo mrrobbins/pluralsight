@@ -1,13 +1,15 @@
-import com.github.mrrobbins.pluralsight.kotlin.provider.Providers
+package com.github.mrrobbins.pluralsight.kotlindemo
+
+import com.github.mrrobbins.pluralsight.kotlindemo.provider.Providers
 import java.security.Provider
 
 fun main(args: Array<String>) {
     val programmer = "Matt"
-    println("hello $programmer! Let's run some kotlin code...\n")
+    println("hello $programmer! Let's run some kotlindemo code...\n")
 
     listProviders(Providers().getProviders()) // instance method call
 
-    listProviders(Providers.getProviders()) // companion object method call
+    listProviders(Providers.Companion.getProviders()) // companion object method call
 
     // using biconsumer lambda
     listAllProviders {

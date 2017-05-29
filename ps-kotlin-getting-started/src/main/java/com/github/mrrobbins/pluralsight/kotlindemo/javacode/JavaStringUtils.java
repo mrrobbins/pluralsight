@@ -1,4 +1,4 @@
-package com.github.mrrobbins.pluralsight.kotlin.java;
+package com.github.mrrobbins.pluralsight.kotlindemo.javacode;
 
 public class JavaStringUtils {
 

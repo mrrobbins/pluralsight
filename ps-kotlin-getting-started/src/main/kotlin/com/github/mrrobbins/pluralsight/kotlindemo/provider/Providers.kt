@@ -1,4 +1,4 @@
-package com.github.mrrobbins.pluralsight.kotlin.provider
+package com.github.mrrobbins.pluralsight.kotlindemo.provider
 
 import java.security.Security
 
@@ -33,7 +33,7 @@ class Providers {
         return listOfProviders
     }
 
-    // similar convention to java static methods
+    // similar convention to javacode static methods
     companion object {
         fun getProviders() = Security.getProviders().toList();
     }

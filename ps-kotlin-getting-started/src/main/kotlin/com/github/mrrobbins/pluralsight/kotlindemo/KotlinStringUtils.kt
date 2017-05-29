@@ -1,4 +1,4 @@
-package com.github.mrrobbins.pluralsight.kotlin
+package com.github.mrrobbins.pluralsight.kotlindemo
 
 class KotlinStringUtils {
 

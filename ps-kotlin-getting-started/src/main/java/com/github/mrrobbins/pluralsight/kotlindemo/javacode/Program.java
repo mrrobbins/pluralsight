@@ -1,7 +1,7 @@
-package com.github.mrrobbins.pluralsight.kotlin.java;
+package com.github.mrrobbins.pluralsight.kotlindemo.javacode;
 
-import com.github.mrrobbins.pluralsight.kotlin.kotlin.Meeting;
-import com.github.mrrobbins.pluralsight.kotlin.kotlin.MeetingException;
+import com.github.mrrobbins.pluralsight.kotlindemo.kotlin.Meeting;
+import com.github.mrrobbins.pluralsight.kotlindemo.kotlin.MeetingException;
 
 public class Program {
 
@@ -14,7 +14,7 @@ public class Program {
 
         System.out.println("The meeting is in " + board.getLocation());
 
-        // have to access kotlin companion objects through the companion object
+        // have to access kotlindemo companion objects through the companion object
         System.out.println(Meeting.Companion.getSOME_CONST1());
 
         System.out.println(Meeting.SOME_CONST2);

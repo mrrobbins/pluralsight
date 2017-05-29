@@ -1,4 +1,4 @@
-package com.github.mrrobbins.pluralsight.kotlin.person
+package com.github.mrrobbins.pluralsight.kotlindemo.person
 
 
 // an interface in file of another name!
@@ -18,7 +18,7 @@ open class Person(val name: String, val age: Int, gender: String = "unspecified"
     override fun sign() = println("$name can sign documents, because he is $age.")
 
     companion object {
-        @JvmStatic // need more than name `main` to make visible as main method to the jvm
+        @JvmStatic // need more than name `com.github.mrrobbins.pluralsight.kotlindemo.main` to make visible as com.github.mrrobbins.pluralsight.kotlindemo.main method to the jvm
         fun main(args: Array<String>) {
             val teenager = Teenager("Matt", 19)
             teenager.sign();

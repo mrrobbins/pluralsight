@@ -1,6 +1,6 @@
 package com.github.mrrobbins.pluralsight.kotlin.kotlin
 
-import com.github.mrrobbins.pluralsight.kotlin.java.Person
+import com.github.mrrobbins.pluralsight.kotlindemo.javacode.Person
 
 
 class Program {

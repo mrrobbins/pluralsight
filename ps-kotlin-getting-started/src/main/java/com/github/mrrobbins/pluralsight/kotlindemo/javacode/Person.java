@@ -1,4 +1,4 @@
-package com.github.mrrobbins.pluralsight.kotlin.java;
+package com.github.mrrobbins.pluralsight.kotlindemo.javacode;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -38,7 +38,7 @@ public class Person {
     }
 }
 
-// kotlin type extending a java type
+// kotlin demo of type extending a javacode type
 class Student extends Person {
 
 }
